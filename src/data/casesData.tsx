@@ -2,23 +2,17 @@ import type { Case } from "../interfaces/interfaces";
 
 export const casesData: Case[] = [
   {
-    title: "Campanha de Marketing",
-    description: "Aumentamos o tráfego do site em 200% com SEO e anúncios pagos.",
-    client: "Empresa X",
+    title: "Crescimento Orgânico para a Loja Verde",
+    client: "Loja Verde (e-commerce de produtos naturais)",
+    challenge: "Baixo tráfego orgânico e poucas conversões online",
+    soluction: "Otimização SEO completa, criação de conteúdo focado em palavras-chave estratégicas e campanha de redes sociais",
+    results: ["Aumento de 85% no tráfego orgânico em 4 meses", "Crescimento de 40% nas conversões online", "Engajamento nas redes sociais duplicado"]
   },
   {
-    title: "Lançamento de Produto",
-    description: "Estratégia de redes sociais que gerou 50 mil leads em 3 meses.",
-    client: "Startup Y",
-  },
-  {
-    title: "Rebranding Completo",
-    description: "Novo posicionamento e identidade visual para ampliar alcance.",
-    client: "Empresa Z",
-  },
-    {
-    title: "Rebranding Completo",
-    description: "Novo posicionamento e identidade visual para ampliar alcance.",
-    client: "Empresa Z",
+    title: "Campanha de Ads para a Startup TechGuru",
+    client: "TechGuru (startup de software B2B)",
+    challenge: "Baixa geração de leads qualificados",
+    soluction: "Planejamento de campanhas segmentadas no LinkedIn e Google Ads, com testes A/B constantes",
+    results: ["Aumento de 120% nos leads qualificados", "Redução de 30% no custo por aquisição (CPA)", "ROI médio de 250% durante a campanha"]
   },
 ];

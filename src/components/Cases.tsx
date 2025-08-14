@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import type { Case } from "../interfaces/interfaces";
 import { casesData } from "../data/casesData";
-import { CardTemplate } from "../ui/CardTemplate";
+import { CasesCard } from "../ui/CasesCard";
 
 function Cases() {
 
@@ -15,11 +15,13 @@ function Cases() {
         <>
             <div className="flex flex-wrap justify-center items-center gap-5">
             {cases.map((item, index) => (
-                <CardTemplate
+                <CasesCard
                     key={index}
                     title={item.title}
-                    description={item.description}
                     client={item.client}
+                    challenge={item.challenge}
+                    soluction={item.soluction}
+                    results={item.results}
                 />
             ))}
             </div>
