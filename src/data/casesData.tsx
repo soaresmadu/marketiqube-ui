@@ -2,14 +2,14 @@ import type { Case } from "../interfaces/interfaces";
 
 export const casesData: Case[] = [
   {
-    title: "Crescimento Orgânico para a Loja Verde",
+    title: "Crescimento Orgânico e Conversões Online",
     client: "Loja Verde (e-commerce de produtos naturais)",
     challenge: "Baixo tráfego orgânico e poucas conversões online",
     soluction: "Otimização SEO completa, criação de conteúdo focado em palavras-chave estratégicas e campanha de redes sociais",
     results: ["Aumento de 85% no tráfego orgânico em 4 meses", "Crescimento de 40% nas conversões online", "Engajamento nas redes sociais duplicado"]
   },
   {
-    title: "Campanha de Ads para a Startup TechGuru",
+    title: "Campanha de Ads e Redução de Custos",
     client: "TechGuru (startup de software B2B)",
     challenge: "Baixa geração de leads qualificados",
     soluction: "Planejamento de campanhas segmentadas no LinkedIn e Google Ads, com testes A/B constantes",

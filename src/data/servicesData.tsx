@@ -14,7 +14,22 @@ export const serviceData: Service[] = [
         title: "Gestão de Redes Sociais",
         abstract: "Planejamento e criação de conteúdo para fortalecer a marca.",
     },
-        {
+    {
+        icon: <FaDigitalOcean />,
+        title: "Branding Digital",
+        abstract: "Identidade e presença online para engajar e fortalecer sua marca.",
+    },
+    {
+        icon: <GiTalk />,
+        title: "Consultoria em SEO",
+        abstract: "Otimização para melhorar o posicionamento no Google.",
+    },
+    {
+        icon: <TiSocialInstagram />,
+        title: "Gestão de Redes Sociais",
+        abstract: "Planejamento e criação de conteúdo para fortalecer a marca.",
+    },
+    {
         icon: <FaDigitalOcean />,
         title: "Branding Digital",
         abstract: "Identidade e presença online para engajar e fortalecer sua marca.",

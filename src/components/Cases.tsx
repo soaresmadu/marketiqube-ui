@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import type { Case } from "../interfaces/interfaces";
 import { casesData } from "../data/casesData";
 import { CasesCard } from "../ui/CasesCard";
+import { Button } from "../ui/Button";
 
 function Cases() {
 
@@ -13,17 +14,26 @@ function Cases() {
 
     return (
         <>
-            <div className="flex flex-wrap justify-center items-center gap-5">
-            {cases.map((item, index) => (
-                <CasesCard
-                    key={index}
-                    title={item.title}
-                    client={item.client}
-                    challenge={item.challenge}
-                    soluction={item.soluction}
-                    results={item.results}
-                />
-            ))}
+            <div className="mt-20 mb-10 w-full flex justify-center items-center">
+                <div className="w-[1200px]">
+                    <div className="w-[900px]">
+                        <Button text="Alguns dos nossos cases de sucesso" />
+                        <h3 className="mb-2 font-bold text-[24px] text-[#1C1C1E]">Resultados que falam por nós</h3>
+                        <span className="text-[17px] text-left">Explore nossos cases de sucesso e veja como ajudamos empresas de diferentes setores a crescer. Através de estratégias digitais personalizadas, otimizamos resultados, aumentamos o engajamento e fortalecemos a presença online de cada cliente, gerando impactos reais e duradouros.</span>
+                    </div>
+                    <div className="mt-7 flex flex-wrap justify-between items-center gap-5">
+                        {cases.map((item, index) => (
+                            <CasesCard
+                                key={index}
+                                title={item.title}
+                                client={item.client}
+                                challenge={item.challenge}
+                                soluction={item.soluction}
+                                results={item.results}
+                            />
+                        ))}
+                    </div>
+                </div>
             </div>
         </>
     )

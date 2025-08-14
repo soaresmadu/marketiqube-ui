@@ -10,15 +10,16 @@ type CardProps = {
 
 export const CasesCard: React.FC<CardProps> = ({ title, client, challenge, soluction, results }) => {
   return (
-    <div className="flex flex-col justify-around items-center bg-white shadow-lg rounded-lg w-110 h-80">
-      <h2 className="text-xl font-bold">{title}</h2>
-      <h3 className="text-xl font-bold">{client}</h3>
-      <p className="text-gray-900 text-center">{challenge}</p>
-      <p className="text-gray-900 text-center">{soluction}</p>
+    <div className="flex flex-col justify-center bg-white border border-gray-200 shadow-lg rounded-lg w-[570px] h-[300px] px-9">
+      <h2 className="text-[20px] font-bold text-center">{title}</h2>
+      <p className="mb-5 text-[16px] font-bold text-[#006677] text-center">{client}</p>
+      <p className="text-[#363534] font-semibold text-left"><strong>Desafio:</strong> {challenge}</p>
+      <p className="text-[#363534] font-semibold text-left"><strong>Solução:</strong> {soluction}</p>
 
-      <ul>
+      <p className="font-bold text-[#363534]">Resultados:</p>
+      <ul className="list-disc list-inside">
         {results.map((result, index) => (
-          <li key={index}>{result}</li>
+          <li key={index} className="text-[#363534] font-semibold">{result}</li>
         ))}
       </ul>
       

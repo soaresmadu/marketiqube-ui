@@ -14,3 +14,9 @@ export interface Service {
     abstract: string,
     // description: string[];
 }
+
+export interface Testimonial {
+    text: string;
+    client: string;
+    picture: string;
+}
