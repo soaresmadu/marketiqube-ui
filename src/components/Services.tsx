@@ -8,22 +8,30 @@ function Services() {
 
     const [services, setServices] = useState<Service[]>([])
 
+    const [isReadMore, setIsReadMore] = useState(false);
+
+    const handleReadMore = () => {
+        setIsReadMore(!isReadMore)
+    }
+
+    const displayedServices = isReadMore ? services : services.slice(0, 3)
+
     useEffect(() => {
         setServices(serviceData)
     }, [])
 
     return (
         <>
-            <div className="mt-20 w-full flex justify-center items-center">
+            <div className="mt-10 w-full flex flex-col justify-center items-center">
                 <div className="w-[1200px]">
-                    <div className="w-[900px]">
-                        <Button text="Alguns dos nossos serviços"/>
+                    <div className="w-[900px]" data-aos="fade-right">
+                        <Button text="Alguns dos nossos serviços" />
                         <h3 className="mb-2 font-bold text-[24px] text-[#1C1C1E]">Serviços que transformam resultados</h3>
                         <span className="text-[17px] text-left">Oferecemos soluções estratégicas para ajudar sua empresa a crescer. Desde otimização de SEO até gestão de redes sociais, nossos serviços são pensados para aumentar sua visibilidade, engajar clientes e gerar resultados reais para o seu negócio.</span>
                     </div>
                     <div className="flex flex-wrap justify-between">
-                        {services.map((service, index) => (
-                            <div key={index}>
+                        {displayedServices.map((service, index) => (
+                            <div key={index} data-aos="fade-left">
                                 <ServicesCard
                                     icon={service.icon}
                                     title={service.title}
@@ -33,6 +41,17 @@ function Services() {
                         ))}
                     </div>
                 </div>
+
+                {services.length > 3 && (
+                    <button
+                        type="button"
+                        onClick={handleReadMore}
+                        className="mt-10 w-[200px] h-[40px] rounded-full bg-[#006677] font-bold text-[#fff] cursor-pointer hover:bg-[#2d474b]"
+                    >
+                        {isReadMore ? "Ver menos" : "Ver mais"}
+                    </button>
+                )}
+
             </div>
         </>
     )

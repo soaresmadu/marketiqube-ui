@@ -18,10 +18,10 @@ function Header() {
                     <h3 className='font-bold text-[22px]'>Marketi<span className='text-[#006677]'>Qube</span></h3>
                 </div>
                 <div className='w-[400px] flex justify-between items-center text-[17px] font-semibold'>
-                    <Link to="quem-somos" smooth={true} duration={500} offset={-110} className="cursor-pointer hover:text-[#006677]">Quem Somos</Link>
-                    <Link to="services" smooth={true} duration={500} offset={-110} className="cursor-pointer hover:text-[#006677]">Serviços</Link>
-                    <Link to="cases" smooth={true} duration={500} offset={-110} className="cursor-pointer hover:text-[#006677]">Cases</Link>
-                    <Link to="testimonials" smooth={true} duration={500} offset={-110} className="cursor-pointer hover:text-[#006677]">Depoimentos</Link>
+                    <Link to="quem-somos" smooth={true} duration={500} offset={-140} className="cursor-pointer hover:text-[#006677]">Quem Somos</Link>
+                    <Link to="services" smooth={true} duration={500} offset={-140} className="cursor-pointer hover:text-[#006677]">Serviços</Link>
+                    <Link to="cases" smooth={true} duration={500} offset={-140} className="cursor-pointer hover:text-[#006677]">Cases</Link>
+                    <Link to="testimonials" smooth={true} duration={500} offset={-140} className="cursor-pointer hover:text-[#006677]">Depoimentos</Link>
                 </div>
                 <div className='flex justify-center items-center gap-3 relative'>
                     {/* Botão principal */}
