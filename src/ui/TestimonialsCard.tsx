@@ -9,11 +9,13 @@ type TestimonialsCardProps = {
 
 export const TestimonialsCard: React.FC<TestimonialsCardProps> = ({ text, client, picture }) => {
     return (
-        <div className="mb-12 flex flex-col justify-center items-center bg-white border border-gray-200 shadow-lg rounded-lg w-[800px] h-[170px] px-9
-               dark:bg-[#080f04] dark:shadow-custom-dark dark:border-none
-        ">
-            <div className="mb-4 flex justify-center items-center gap-5">
-                <div className="min-w-[90px] h-[90px] rounded-full overflow-hidden relative">
+        <div className="mb-12 flex flex-col justify-center items-center 
+                        bg-white border border-gray-200 shadow-lg rounded-lg 
+                        w-full max-w-[800px] px-6 py-6
+                        dark:bg-[#080f04] dark:shadow-custom-dark dark:border-none">
+
+            <div className="mb-4 flex flex-col sm:flex-row justify-center items-center sm:items-start gap-4">
+                <div className="w-[90px] h-[90px] rounded-full overflow-hidden relative">
                     <Image
                         src={picture}
                         alt={client}
@@ -22,9 +24,12 @@ export const TestimonialsCard: React.FC<TestimonialsCardProps> = ({ text, client
                         className="object-cover"
                     />
                 </div>
-                <p className="text-right">{text}</p>
+                <p className="text-center sm:text-left text-sm sm:text-base max-w-[600px]">
+                    {text}
+                </p>
             </div>
-            <h3>{client}</h3>
+
+            <h3 className="font-semibold text-center sm:text-left">{client}</h3>
         </div>
     );
 };

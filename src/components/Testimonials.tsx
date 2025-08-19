@@ -19,14 +19,15 @@ const Testimonials: React.FC = () => {
     }, []);
 
     return (
-        <div className="mt-15 mb-10 w-full flex justify-center items-center">
+        <div className="mt-15 mb-10 w-full flex justify-center items-center px-4">
             <div className="w-full max-w-[1200px]">
-                <div className="mb-10 w-[900px]">
+
+                <div className="mb-10 max-w-[900px]">
                     <Button text="Depoimentos" />
-                    <h3 className="mb-2 font-bold text-[24px]">
+                    <h3 className="mb-2 font-bold text-[22px] sm:text-[24px]">
                         Experiências que inspiram e fortalecem nossa jornada:
                     </h3>
-                    <span className="text-[17px] text-left">
+                    <span className="text-[15px] sm:text-[17px] text-left block">
                         A satisfação de nossos clientes é a nossa maior conquista. Cada depoimento reflete não apenas os resultados alcançados, mas também a confiança construída ao longo das parcerias. É através dessas histórias que reafirmamos nosso compromisso com qualidade e dedicação.
                     </span>
                 </div>
@@ -42,8 +43,13 @@ const Testimonials: React.FC = () => {
                     }}
                     pagination={{ clickable: true }}
                     modules={[Pagination, Autoplay]}
+                    breakpoints={{
+                        0: { slidesPerView: 1 },
+                        640: { slidesPerView: 1 },
+                        1024: { slidesPerView: 1 },
+                    }}
                     className="testimonials-swiper [--swiper-pagination-color:#4f9e22] [--swiper-pagination-bullet-inactive-color:#9ca3af] [--swiper-pagination-bullet-inactive-opacity:1]
-                    dark:[--swiper-pagination-color:#4f9e22] dark:[--swiper-pagination-bullet-inactive-color:#fff]"
+                        dark:[--swiper-pagination-color:#4f9e22] dark:[--swiper-pagination-bullet-inactive-color:#fff]"
                 >
                     {testimonials.map((testimonial, index) => (
                         <SwiperSlide key={index} className="flex justify-center items-center w-auto">

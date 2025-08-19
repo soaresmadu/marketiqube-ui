@@ -13,20 +13,21 @@ const Services: React.FC = () => {
     }, []);
 
     return (
-        <div className="mt-10 w-full flex flex-col justify-center items-center">
-            <div className="w-[1200px]">
-                <div className="w-[900px]" data-aos="fade-right">
+        <div className="mt-10 w-full flex flex-col justify-center items-center dark:bg-[#070c04] transition-colors duration-300">
+            <div className="w-full max-w-[1200px] px-4 sm:px-6">
+                <div className="w-full max-w-[900px] mx-auto" data-aos="fade-right">
                     <Button text="Alguns dos nossos serviços" />
-                    <h3 className="mb-2 font-bold text-[24px]">
+                    <h3 className="mb-2 font-bold text-[24px] text-gray-900 dark:text-white">
                         Serviços que transformam resultados
                     </h3>
-                    <span className="text-[17px] text-left">
+                    <span className="text-[17px] text-left text-gray-700 dark:text-gray-300">
                         Oferecemos soluções estratégicas para ajudar sua empresa a crescer. Desde otimização de SEO até gestão de redes sociais, nossos serviços são pensados para aumentar sua visibilidade, engajar clientes e gerar resultados reais para o seu negócio.
                     </span>
                 </div>
+
                 <div className="flex flex-wrap justify-between mt-7 gap-5">
                     {services.map((service, index) => (
-                        <div key={index} data-aos="zoom-in">
+                        <div key={index} data-aos="zoom-in" className="w-full sm:w-[360px]">
                             <ServicesCard
                                 icon={service.icon}
                                 title={service.title}

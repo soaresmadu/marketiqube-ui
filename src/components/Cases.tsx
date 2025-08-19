@@ -13,8 +13,8 @@ const Cases = () => {
 
     return (
         <div className="mt-20 mb-10 w-full flex justify-center items-center">
-            <div className="w-[1200px]">
-                <div className="w-[900px]">
+            <div className="w-full max-w-[1200px] px-4 sm:px-6">
+                <div className="w-full max-w-[900px]">
                     <Button text="Alguns dos nossos cases de sucesso" />
                     <h3 className="mb-2 font-bold text-[24px]">
                         Resultados que falam por nós
@@ -24,7 +24,7 @@ const Cases = () => {
                     </span>
                 </div>
 
-                <div className="mt-7 flex flex-wrap justify-between items-center gap-5" data-aos="fade-left">
+                <div className="mt-7 flex flex-wrap justify-center sm:justify-between items-center gap-5" data-aos="fade-left">
                     {cases.map((item: Case, index: number) => (
                         <CasesCard
                             key={index}

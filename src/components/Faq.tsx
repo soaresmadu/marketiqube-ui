@@ -1,4 +1,3 @@
-// src/components/Faq.tsx
 import { useEffect, useState } from "react";
 import { Button } from "../ui/Button";
 import type { QuestionsFaq } from "../interfaces/interfaces";
@@ -19,8 +18,8 @@ const Faq: React.FC = () => {
 
     return (
         <div className="mt-20 mb-10 w-full flex justify-center items-center">
-            <div className="w-[1200px]">
-                <div className="w-[900px]">
+            <div className="w-full max-w-[1200px] px-4 sm:px-6">
+                <div className="w-full max-w-[900px]">
                     <Button text="Perguntas Frequentes" />
                     <h3 className="mb-2 font-bold text-[24px]">
                         Tudo o que você precisa saber em um só lugar

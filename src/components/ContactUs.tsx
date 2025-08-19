@@ -8,8 +8,8 @@ const Contact: React.FC = () => {
 
   return (
     <div className="mt-20 mb-10 w-full flex justify-center items-center">
-      <div className="w-[1200px]">
-        <div className="w-[900px]">
+      <div className="w-full max-w-[1200px] px-4 sm:px-6">
+        <div className="w-full max-w-[900px]">
           <Button text="Contato" />
           <h3 className="mb-2 font-bold text-[24px]">
             Entre em contato com a MarketiQube
@@ -22,20 +22,20 @@ const Contact: React.FC = () => {
           </p>
         </div>
 
-        <form onSubmit={handleSubmit} className="flex flex-col justify-center items-start mt-5">
+        <form onSubmit={handleSubmit} className="flex flex-col justify-center items-start mt-5 w-full max-w-[650px]">
           <label htmlFor="subject" className="mt-5 text-[17px]">Assunto:</label>
           <input
             type="text"
             name="subject"
             id="subject"
-            className="mt-1 w-[650px] h-[50px] border border-gray-300 rounded-md px-2 py-1 focus:outline-none focus:ring-2 focus:ring-[#4f9e22] dark:bg-[#080f04]"
+            className="mt-1 w-full h-[50px] border border-gray-300 rounded-md px-2 py-1 focus:outline-none focus:ring-2 focus:ring-[#4f9e22] dark:bg-[#080f04]"
           />
 
           <label htmlFor="message" className="mt-5 text-[17px]">Mensagem:</label>
           <textarea
             name="message"
             id="message"
-            className="w-[650px] min-h-[100px] max-h-[100px] mt-1 border border-gray-300 rounded-md px-2 py-1 focus:outline-none focus:ring-2 focus:ring-[#4f9e22] dark:bg-[#080f04]"
+            className="w-full min-h-[100px] max-h-[200px] mt-1 border border-gray-300 rounded-md px-2 py-1 focus:outline-none focus:ring-2 focus:ring-[#4f9e22] dark:bg-[#080f04]"
           ></textarea>
 
           <button
