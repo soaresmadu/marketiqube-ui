@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## MarketiQube UI
 
-## Getting Started
+Front-end da aplicação MarketiQube, desenvolvido em **React**, **TypeScript** e **Tailwind CSS**, hospedado no **Vercel**.
 
-First, run the development server:
+### 💻 Tecnologias
+
+- **React**: Biblioteca para construção de interfaces.
+- **TypeScript**: Superset do JavaScript com tipagem estática.
+- **Tailwind CSS**: Framework CSS utilitário.
+- **React Icons**: Ícones prontos para React.
+- **Vercel**: Hospedagem e deploy contínuo.
+- **GitHub**: Versionamento de código.
+
+### 🚀 Funcionalidades
+
+- **Dark/Light Mode**: Alternância entre tema claro e escuro.
+- **Navbar com scroll suave**: Navegação entre seções da página.
+- **Componentes reutilizáveis**: Botões, cards e outros elementos.
+- **Scroll personalizado**: Customização de cores do scrollbar para claro e dark mode.
+- **Responsivo**: Layout adaptável para diferentes tamanhos de tela.
+
+### 🖥️ Como rodar localmente
+
+1. Clone o repositório:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/SEU_USUARIO/marketiqube-ui.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Acesse a pasta do projeto:
+```bash
+cd marketiqube-ui
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Instale as dependências:
+```bash
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Rode a aplicação:
+```bash
+npm run dev
+```
 
-## Learn More
+5. Abra no navegador:
+```bash
+[git clone https://github.com/SEU_USUARIO/marketiqube-ui.git](http://localhost:3000)
+```
 
-To learn more about Next.js, take a look at the following resources:
+### 🌐 Deploy
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+O projeto está hospedado no Vercel e é atualizado automaticamente a cada push para o branch main.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Acesse: https://marketiqube-ui.vercel.app/
 
-## Deploy on Vercel
+### 📌 Contato
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+GitHub: https://github.com/soaresmadu
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+LinkedIn: https://www.linkedin.com/in/mariaeduardajsoares/
+
