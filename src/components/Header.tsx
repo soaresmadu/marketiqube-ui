@@ -17,7 +17,7 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, setIsDarkMode }) => {
 
     return (
         <div className='w-full flex justify-center items-center bg-[#f4f4f4] dark:bg-[#070c04] sticky top-0 z-50 shadow-xl'>
-            <nav className="w-full max-w-[1200px] flex justify-between items-center px-4 h-[85px]">
+            <nav className="w-full max-w-[1200px] flex justify-between items-center px-4 sm:px-0 h-[85px]">
 
                 <div className='flex items-center gap-3'>
                     <SiWikimediafoundation size={24} color='#4f9e22' />

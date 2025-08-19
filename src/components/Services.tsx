@@ -13,7 +13,7 @@ const Services: React.FC = () => {
     }, []);
 
     return (
-        <div className="mt-10 mb-10 w-full flex flex-col justify-center items-center dark:bg-[#070c04] transition-colors duration-300">
+        <div className="mt-10 mb-10 w-full flex flex-col justify-center items-center transition-colors duration-300">
             <div className="w-full max-w-[1200px] px-6 sm:px-0">
                 <div className="w-full max-w-[900px] mx-auto sm:m-0" data-aos="fade-right">
                     <Button text="Alguns dos nossos serviços" />

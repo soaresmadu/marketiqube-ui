@@ -19,7 +19,7 @@ const Home: NextPage = () => {
   }, []);
 
   return (
-    <div className='w-full h-full text-[#1C1C1E]  dark:text-[#f4f4f4] dark:bg-[#080f04]'>
+    <div className='w-full h-full text-[#1C1C1E] dark:text-[#f4f4f4] dark:bg-[#080f04]'>
       
       <div id="quem-somos">
         <QuemSomos />

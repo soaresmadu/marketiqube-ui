@@ -7,8 +7,35 @@
 
 * {
   box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
 }
 
-* {
-  font-family: 'Ubuntu', sans-serif;
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f4f4f4;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4f9e22;
+  border-radius: 10px;
+  border: 2px solid transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #38691b;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #0a1c00;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background-color: #38691b;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background-color: #4f9e22;
 }
