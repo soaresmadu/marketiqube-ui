@@ -8,22 +8,22 @@ const Contact: React.FC = () => {
 
   return (
     <div className="mt-20 mb-10 w-full flex justify-center items-center">
-      <div className="w-full max-w-[1200px] px-4 sm:px-6">
+      <div className="w-full max-w-[1200px] px-6 sm:px-0">
         <div className="w-full max-w-[900px]">
           <Button text="Contato" />
-          <h3 className="mb-2 font-bold text-[24px]">
+          <h3 className="mb-2 font-bold text-[18px] sm:text-[24px]">
             Entre em contato com a MarketiQube
           </h3>
-          <p className="text-[17px] text-left">
+          <p className="text-[15px] sm:text-[17px] text-left">
             Queremos entender suas necessidades e ajudar seu projeto a alcançar novos resultados.
           </p>
-          <p className="text-[17px] text-left">
+          <p className="text-[15px] sm:text-[17px] text-left">
             Fale conosco agora mesmo.
           </p>
         </div>
 
-        <form onSubmit={handleSubmit} className="flex flex-col justify-center items-start mt-5 w-full max-w-[650px]">
-          <label htmlFor="subject" className="mt-5 text-[17px]">Assunto:</label>
+        <form onSubmit={handleSubmit} className="flex flex-col justify-center items-start w-full max-w-[650px]">
+          <label htmlFor="subject" className="mt-5 text-[15px] sm:text-[17px]">Assunto:</label>
           <input
             type="text"
             name="subject"
@@ -31,16 +31,16 @@ const Contact: React.FC = () => {
             className="mt-1 w-full h-[50px] border border-gray-300 rounded-md px-2 py-1 focus:outline-none focus:ring-2 focus:ring-[#4f9e22] dark:bg-[#080f04]"
           />
 
-          <label htmlFor="message" className="mt-5 text-[17px]">Mensagem:</label>
+          <label htmlFor="message" className="mt-5 text-[15px] sm:text-[17px]">Mensagem:</label>
           <textarea
             name="message"
             id="message"
-            className="w-full min-h-[100px] max-h-[200px] mt-1 border border-gray-300 rounded-md px-2 py-1 focus:outline-none focus:ring-2 focus:ring-[#4f9e22] dark:bg-[#080f04]"
+            className="w-full min-h-[60px] max-h-[60px] sm:min-h-[100px] sm:max-h-[100px] mt-1 border border-gray-300 rounded-md px-2 py-1 focus:outline-none focus:ring-2 focus:ring-[#4f9e22] dark:bg-[#080f04]"
           ></textarea>
 
           <button
             type="submit"
-            className="mt-4 w-[130px] h-[40px] py-1.5 px-5 rounded-full bg-[#4f9e22] font-bold text-white cursor-pointer hover:bg-[#38691b] transition-colors"
+            className="mt-4 text-[13px] sm:text-[17px] w-[90px] h-[30px] sm:w-[130px] sm:h-[40px] py-1.5 px-5 rounded-full bg-[#4f9e22] font-bold text-white cursor-pointer hover:bg-[#38691b] transition-colors"
           >
             Enviar
           </button>

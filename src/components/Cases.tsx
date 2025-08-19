@@ -13,13 +13,13 @@ const Cases = () => {
 
     return (
         <div className="mt-20 mb-10 w-full flex justify-center items-center">
-            <div className="w-full max-w-[1200px] px-4 sm:px-6">
+            <div className="w-full max-w-[1200px] px-6 sm:px-0">
                 <div className="w-full max-w-[900px]">
                     <Button text="Alguns dos nossos cases de sucesso" />
-                    <h3 className="mb-2 font-bold text-[24px]">
+                    <h3 className="mb-2 font-bold text-[18px] sm:text-[24px]">
                         Resultados que falam por nós
                     </h3>
-                    <span className="text-[17px] text-left">
+                    <span className="text-[15px] sm:text-[17px] text-left">
                         Explore nossos cases de sucesso e veja como ajudamos empresas de diferentes setores a crescer. Através de estratégias digitais personalizadas, otimizamos resultados, aumentamos o engajamento e fortalecemos a presença online de cada cliente, gerando impactos reais e duradouros.
                     </span>
                 </div>

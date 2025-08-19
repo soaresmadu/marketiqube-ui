@@ -17,15 +17,15 @@ export const CasesCard: React.FC<CasesCardProps> = ({ title, client, challenge, 
             dark:bg-[#080f04] dark:shadow-custom-dark dark:border-none
             sm:px-8 sm:py-6
         ">
-            <h3 className="text-[22px] font-bold text-center">{title}</h3>
-            <p className="mb-4 text-[19px] font-bold text-[#4f9e22] text-center">{client}</p>
-            <p className="font-semibold text-left mb-2"><strong>Desafio:</strong> {challenge}</p>
-            <p className="font-semibold text-left mb-2"><strong>Solução:</strong> {solution}</p>
+            <h3 className="text-[16px] sm:text-[22px] font-bold text-center">{title}</h3>
+            <p className="mb-4 text-[13px] sm:text-[18px] font-bold text-[#4f9e22] text-center">{client}</p>
+            <p className="text-[13px] sm:text-[16px] font-semibold text-left mb-2"><strong>Desafio:</strong> {challenge}</p>
+            <p className="text-[13px] sm:text-[16px] font-semibold text-left mb-2"><strong>Solução:</strong> {solution}</p>
 
-            <p className="font-bold mt-2">Resultados:</p>
+            <p className="text-[13px] sm:text-[16px] font-bold mt-2">Resultados:</p>
             <ul className="list-disc list-inside">
                 {results.map((result, index) => (
-                    <li key={index} className="font-semibold">{result}</li>
+                    <li key={index} className="text-[13px] sm:text-[16px] font-semibold">{result}</li>
                 ))}
             </ul>
         </div>

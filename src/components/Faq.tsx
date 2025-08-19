@@ -18,13 +18,13 @@ const Faq: React.FC = () => {
 
     return (
         <div className="mt-20 mb-10 w-full flex justify-center items-center">
-            <div className="w-full max-w-[1200px] px-4 sm:px-6">
+            <div className="w-full max-w-[1200px] px-6 sm:px-0">
                 <div className="w-full max-w-[900px]">
                     <Button text="Perguntas Frequentes" />
-                    <h3 className="mb-2 font-bold text-[24px]">
+                    <h3 className="mb-2 font-bold text-[18px] sm:text-[24px]">
                         Tudo o que você precisa saber em um só lugar
                     </h3>
-                    <span className="text-[17px] text-left">
+                    <span className="text-[15px] sm:text-[17px] text-left">
                         Para tornar sua experiência mais prática e transparente,
                         reunimos respostas para as questões mais recorrentes de nossos clientes.
                     </span>
@@ -41,7 +41,7 @@ const Faq: React.FC = () => {
                                 className="p-4 flex justify-between items-center rounded-xl hover:bg-gray-100 dark:hover:bg-[#181717] transition-colors"
                                 onClick={() => toggleQuestion(index)}
                             >
-                                <p className="text-[18px] font-medium">{item.question}</p>
+                                <p className="text-[14px] sm:text-[18px] font-medium">{item.question}</p>
                                 <span className="text-xl">
                                     {openIndex === index ? <IoIosArrowUp /> : <IoIosArrowDown />}
                                 </span>
@@ -49,7 +49,7 @@ const Faq: React.FC = () => {
 
                             {openIndex === index && (
                                 <div className="p-4 w-full border-t border-gray-300">
-                                    <p className="mt-2 text-[17px] font-medium text-gray-700 dark:text-[#cfcfcf]">
+                                    <p className="mt-2 text-[13px] sm:text-[17px] font-medium text-gray-700 dark:text-[#cfcfcf]">
                                         {item.answer}
                                     </p>
                                 </div>

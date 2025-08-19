@@ -19,12 +19,12 @@ const Testimonials: React.FC = () => {
     }, []);
 
     return (
-        <div className="mt-15 mb-10 w-full flex justify-center items-center px-4">
+        <div className="mt-20 mb-10 w-full flex justify-center items-center px-6 sm:px-0">
             <div className="w-full max-w-[1200px]">
 
                 <div className="mb-10 max-w-[900px]">
                     <Button text="Depoimentos" />
-                    <h3 className="mb-2 font-bold text-[22px] sm:text-[24px]">
+                    <h3 className="mb-2 font-bold text-[18px] sm:text-[24px]">
                         Experiências que inspiram e fortalecem nossa jornada:
                     </h3>
                     <span className="text-[15px] sm:text-[17px] text-left block">
@@ -53,7 +53,7 @@ const Testimonials: React.FC = () => {
                 >
                     {testimonials.map((testimonial, index) => (
                         <SwiperSlide key={index} className="flex justify-center items-center w-auto">
-                            <div className="flex items-center justify-center">
+                            <div className="p-5 sm:p-0 w-full h-[300px] flex items-center justify-center">
                                 <TestimonialsCard
                                     text={testimonial.text}
                                     picture={testimonial.picture}
