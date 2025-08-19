@@ -8,12 +8,15 @@ type ClientsCardProps = {
 
 export const ClientsCard: React.FC<ClientsCardProps> = ({ title, picture }) => {
     return (
-        <div className="flex flex-col justify-center items-center bg-white border border-gray-200 shadow-lg rounded-lg w-[200px] h-[200px]">
+        <div className="flex flex-col justify-center items-center bg-white border border-gray-200 shadow-lg rounded-lg w-[200px] h-[200px]
+        dark:bg-[#080f04] dark:shadow-custom-dark dark:border-none
+        ">
             <div className="w-[100px] h-[100px] rounded-full relative overflow-hidden">
                 <Image
                     src={picture}
                     alt={title}
-                    fill
+                    width={100}
+                    height={100}
                     className="object-cover"
                 />
             </div>

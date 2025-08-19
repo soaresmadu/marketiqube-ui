@@ -17,7 +17,7 @@ const Services: React.FC = () => {
             <div className="w-[1200px]">
                 <div className="w-[900px]" data-aos="fade-right">
                     <Button text="Alguns dos nossos serviços" />
-                    <h3 className="mb-2 font-bold text-[24px] text-[#1C1C1E]">
+                    <h3 className="mb-2 font-bold text-[24px]">
                         Serviços que transformam resultados
                     </h3>
                     <span className="text-[17px] text-left">

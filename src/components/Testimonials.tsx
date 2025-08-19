@@ -23,7 +23,7 @@ const Testimonials: React.FC = () => {
             <div className="w-full max-w-[1200px]">
                 <div className="mb-10 w-[900px]">
                     <Button text="Depoimentos" />
-                    <h3 className="mb-2 font-bold text-[24px] text-[#1C1C1E]">
+                    <h3 className="mb-2 font-bold text-[24px]">
                         Experiências que inspiram e fortalecem nossa jornada:
                     </h3>
                     <span className="text-[17px] text-left">
@@ -42,7 +42,8 @@ const Testimonials: React.FC = () => {
                     }}
                     pagination={{ clickable: true }}
                     modules={[Pagination, Autoplay]}
-                    className="testimonials-swiper [--swiper-pagination-color:#006677] [--swiper-pagination-bullet-inactive-color:#9ca3af] [--swiper-pagination-bullet-inactive-opacity:1]"
+                    className="testimonials-swiper [--swiper-pagination-color:#4f9e22] [--swiper-pagination-bullet-inactive-color:#9ca3af] [--swiper-pagination-bullet-inactive-opacity:1]
+                    dark:[--swiper-pagination-color:#4f9e22] dark:[--swiper-pagination-bullet-inactive-color:#fff]"
                 >
                     {testimonials.map((testimonial, index) => (
                         <SwiperSlide key={index} className="flex justify-center items-center w-auto">

@@ -16,7 +16,7 @@ const Cases = () => {
             <div className="w-[1200px]">
                 <div className="w-[900px]">
                     <Button text="Alguns dos nossos cases de sucesso" />
-                    <h3 className="mb-2 font-bold text-[24px] text-[#1C1C1E]">
+                    <h3 className="mb-2 font-bold text-[24px]">
                         Resultados que falam por nós
                     </h3>
                     <span className="text-[17px] text-left">

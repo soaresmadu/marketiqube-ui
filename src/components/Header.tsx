@@ -1,22 +1,28 @@
-import { useState } from 'react';
 import { SiWikimediafoundation } from "react-icons/si";
 import { MdWbSunny } from "react-icons/md";
 import { IoMoon } from "react-icons/io5";
 import { Link } from 'react-scroll';
+import React from "react";
 
-const Header = () => {
-    const [isDarkMode, setIsDarkMode] = useState(false);
-    const [open, setOpen] = useState(false);
+type HeaderProps = {
+    isDarkMode: boolean;
+    setIsDarkMode: (value: boolean) => void;
+};
+
+const Header: React.FC<HeaderProps> = ({ isDarkMode, setIsDarkMode }) => {
+    const [open, setOpen] = React.useState(false);
 
     return (
-        <div className='w-full h-[85px] flex justify-around items-center bg-[#f4f4f4] sticky top-0 z-50 shadow-lg'>
+        <div className='w-full h-[85px] flex justify-around items-center bg-[#f4f4f4] dark:bg-[#070c04] sticky top-0 z-50 shadow-xl'>
             <nav className="w-[1200px] flex justify-between items-center">
                 <div className='flex items-center gap-3'>
-                    <SiWikimediafoundation size={24} color='#006677' />
-                    <h3 className='font-bold text-[22px]'>Marketi<span className='text-[#006677]'>Qube</span></h3>
+                    <SiWikimediafoundation size={24} color='#4f9e22' />
+                    <h3 className='font-bold text-[22px] text-gray-900 dark:text-white'>
+                        Marketi<span className='text-[#4f9e22]'>Qube</span>
+                    </h3>
                 </div>
 
-                <div className='w-[700px] flex justify-between items-center text-[17px] font-semibold'>
+                <div className='w-[700px] flex justify-between items-center text-[17px] font-semibold text-gray-900 dark:text-[#f4f4f4]'>
                     {["quem-somos", "services", "cases", "testimonials", "faq", "contact"].map((section) => (
                         <Link
                             key={section}
@@ -24,7 +30,7 @@ const Header = () => {
                             smooth={true}
                             duration={500}
                             offset={-140}
-                            className="cursor-pointer hover:text-[#006677]"
+                            className="cursor-pointer hover:text-[#4f9e22]"
                         >
                             {section === "quem-somos" ? "Quem Somos" :
                                 section === "services" ? "Serviços" :
@@ -38,22 +44,22 @@ const Header = () => {
 
                 <div className='flex justify-center items-center gap-3 relative'>
                     <button
-                        className="cursor-pointer w-[43px] h-[43px] flex justify-center items-center border border-gray-600 rounded-md hover:bg-gray-200"
+                        className="cursor-pointer w-[43px] h-[43px] flex justify-center items-center border border-gray-600 rounded-md hover:bg-gray-200 dark:border-[#f4f4f4] dark:text-[#f4f4f4] dark:hover:bg-[#101010]"
                         onClick={() => setOpen(!open)}
                     >
                         {isDarkMode ? <IoMoon size={24} /> : <MdWbSunny size={24} />}
                     </button>
 
                     {open && (
-                        <div className="absolute top-full mt-2 right-0 w-40 bg-[#f4f4f4] rounded-md shadow-lg z-50">
+                        <div className="absolute top-full mt-2 right-0 w-40 bg-[#f4f4f4] dark:bg-[#122009] dark:text-[#f4f4f4] rounded-md shadow-lg z-50">
                             <button
-                                className="w-full text-left px-4 py-2 flex items-center gap-2 hover:bg-gray-200 cursor-pointer"
+                                className="w-full text-left px-4 py-2 flex items-center gap-2 hover:bg-gray-200 dark:hover:bg-[#0d1408] cursor-pointer"
                                 onClick={() => { setIsDarkMode(false); setOpen(false); }}
                             >
                                 <MdWbSunny size={20} /> Modo Claro
                             </button>
                             <button
-                                className="w-full text-left px-4 py-2 flex items-center gap-2 hover:bg-gray-200 cursor-pointer"
+                                className="w-full text-left px-4 py-2 flex items-center gap-2 hover:bg-gray-200 dark:hover:bg-[#0d1408] cursor-pointer"
                                 onClick={() => { setIsDarkMode(true); setOpen(false); }}
                             >
                                 <IoMoon size={20} /> Modo Escuro

@@ -1,14 +1,11 @@
-// tailwind.config.js
-
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ['./src/**/*.{js,ts,jsx,tsx}'],
-  theme: {
-    extend: {
-      fontFamily: {
-        roboto: ['Roboto', 'sans-serif'],
-      },
-    },
+export const content = ['./src/**/*.{js,ts,jsx,tsx}'];
+export const darkMode = 'class';
+export const theme = {
+  extend: {
+    boxShadow: {
+      'custom-dark': '0 4px 6px rgba(244,244,244,0.5)',
+    }
   },
-  plugins: [],
 };
+export const plugins = [];

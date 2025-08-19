@@ -17,7 +17,7 @@ const Clients = () => {
             <div className="w-[1200px]">
                 <div className="w-[900px]">
                     <Button text="Alguns de nossos clientes" />
-                    <h3 className="mb-2 font-bold text-[24px] text-[#1C1C1E]">
+                    <h3 className="mb-2 font-bold text-[24px]">
                         Marcas que confiam, resultados que transformam.
                     </h3>
                 </div>

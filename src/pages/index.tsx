@@ -6,7 +6,6 @@ import Clients from '@/components/Clients';
 import Contact from '@/components/ContactUs';
 import Faq from '@/components/Faq';
 import Footer from '@/components/Footer';
-import Header from '@/components/Header';
 import QuemSomos from '@/components/QuemSomos';
 import Services from '@/components/Services';
 import Testimonials from '@/components/Testimonials';
@@ -20,8 +19,7 @@ const Home: NextPage = () => {
   }, []);
 
   return (
-    <div className='w-full h-full'>
-      <Header />
+    <div className='w-full h-full text-[#1C1C1E]  dark:text-[#f4f4f4] dark:bg-[#080f04]'>
       
       <div id="quem-somos">
         <QuemSomos />
