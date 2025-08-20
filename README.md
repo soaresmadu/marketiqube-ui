@@ -24,7 +24,7 @@ Front-end da aplicação MarketiQube, desenvolvido em **React**, **TypeScript** 
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/SEU_USUARIO/marketiqube-ui.git
+git clone https://github.com/soaresmadu/marketiqube-ui
 ```
 
 2. Acesse a pasta do projeto:
